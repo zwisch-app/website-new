@@ -1,0 +1,17 @@
+{
+  "name": "landingwebsite",
+  "version": "1.0.0",
+  "description": "Zwisch Landing Page",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

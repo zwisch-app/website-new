@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zwisch: AI-powered school carpooling app that pairs student ride requests with parent and student driver routes. Join our waiting list now!">
+    <meta name="keywords" content="school carpooling, AI carpooling, student transportation, eco-friendly school rides">
+    <title>Zwisch - AI-Powered School Carpooling</title>
+    <!-- SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="icon-logo.svg">
+    <!-- PNG Fallback for Safari -->
+    <link rel="icon" type="image/png" href="icon-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Readex+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="canonical" href="https://zwisch.app">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="full-logo.png" alt="Zwisch Logo">
+            </div>
+            <div class="brand-name">
+                Zwisch
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>AI-Powered School Carpooling</h1>
+            <p>Zwisch pairs student ride requests with parent & student driver routes.</p>
+            <form id="waitlist-form" class="waitlist-form">
+                <input type="email" name="email" placeholder="Your school email" required
+                    aria-label="Enter your school email">
+                <button type="submit">Join Waiting List</button>
+            </form>
+        </section>
+
+        <section id="supported-by">
+            <p>Supported by leading schools in Atlanta:</p>
+            <div class="logo-grid">
+                <img src="cross.png" alt="Christ the King School">
+                <img src="bestmarist.png" alt="Marist School">
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-robot" aria-hidden="true"></i>
+                    <h2>AI Matching</h2>
+                    <p>Ride pairing based on freeform text prompts</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-school" aria-hidden="true"></i>
+                    <h2>Easy Integration</h2>
+                    <p>Automatic linking through your school email</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                    <h2>Safe Payments</h2>
+                    <p>Stripe's secure and easy payment management</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h2>Eco-Friendly</h2>
+                    <p>Reduce carbon emissions and vehicle congestion</p>
+                </div>
+            </div>
+            <div class="feature-highlight">
+                <div class="feature-content">
+                    <h2>Reduce Campus Traffic</h2>
+                    <p>Zwisch helps decrease the number of cars around schools during peak hours, making drop-offs and
+                        pick-ups smoother and safer for everyone.</p>
+                </div>
+                <div class="feature-image">
+                    <img src="traffic.jpg" alt="Traffic at night demonstrating congestion">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="full-logo.png" alt="Zwisch Logo">
+            </div>
+            <p>&copy; 2024 Zwisch. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@zwisch.app">info@zwisch.app</a></p>
+            <div class="footer-links">
+                <a href="https://zwisch.app/privacy_policy.html">Privacy Policy</a>
+                <a href="https://zwisch.app/terms_and_conditions.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Successfully added to the waiting list!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
