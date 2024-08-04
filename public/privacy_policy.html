@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Zwisch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Readex+Pro&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #58f5bb;
+            --accent-color: #d6ffee;
+            --background-color: #000;
+            --text-color: #fff;
+        }
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .brand-name {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        main {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="full-logo.png" alt="Zwisch Logo">
+            </div>
+            <div class="brand-name">
+                Zwisch
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Privacy Policy</h1>
+        <div id="content">
+            <!-- Your privacy policy content goes here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zwisch. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@zwisch.app">info@zwisch.app</a></p>
+            <div class="footer-links">
+                <a href="https://zwisch.app/privacy_policy.html">Privacy Policy</a> |
+                <a href="https://zwisch.app/terms_and_conditions.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const md = window.markdownit();
+        const markdownContent = `
+# Zwisch Privacy Policy
+
+## 1. Introduction
+
+This Privacy Policy explains how Zwisch ("we", "us", "our") collects, uses, and shares your personal information when you use our carpooling application ("App").
+
+## 2. Information We Collect
+
+### 2.1 Information You Provide
+- Account information (name, email, phone number)
+- Profile information (photo, school, grade)
+- Driver information (license, vehicle details)
+- Payment information
+- Ride requests and preferences
+
+### 2.2 Information Automatically Collected
+- Device information
+- Log data and usage statistics
+- Location data (with your permission)
+
+### 2.3 Information from Third Parties
+- Information from social media accounts if you choose to link them
+
+## 3. How We Use Your Information
+
+We use your information to:
+- Provide, maintain, and improve the App
+- Process ride requests and payments
+- Communicate with you about the App
+- Ensure safety and security
+- Comply with legal obligations
+
+## 4. Sharing of Information
+
+We may share your information with:
+- Other users (e.g., drivers, passengers) as necessary for ride coordination
+- Service providers who assist in our operations
+- Law enforcement or other parties when required by law or to protect rights
+
+We do not sell your personal information to third parties.
+
+## 5. Data Retention
+
+We retain your information for as long as necessary to provide the App and fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law.
+
+## 6. Data Security
+
+We implement appropriate technical and organizational measures to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure.
+
+## 7. Your Rights and Choices
+
+Depending on your location, you may have rights regarding your personal information, including:
+- Access to your personal information
+- Correction of inaccurate information
+- Deletion of your information
+- Objection to or restriction of certain processing
+
+To exercise these rights, please contact us using the information provided at the end of this policy.
+
+## 8. Children's Privacy
+
+The App is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe we may have collected information about a child, please contact us.
+
+## 9. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+
+## 10. Contact Us
+
+If you have any questions about this Privacy Policy, please contact us at [info@zwisch.com](mailto:info@zwisch.com).
+
+Last Updated: [Current Date]
+        `;
+        
+        document.getElementById('content').innerHTML = md.render(markdownContent);
+    </script>
+</body>
+</html>

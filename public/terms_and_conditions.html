@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Zwisch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Readex+Pro&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #58f5bb;
+            --accent-color: #d6ffee;
+            --background-color: #000;
+            --text-color: #fff;
+        }
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .brand-name {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        main {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="full-logo.png" alt="Zwisch Logo">
+            </div>
+            <div class="brand-name">
+                Zwisch
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Terms and Conditions</h1>
+        <div id="content">
+            <!-- Your terms and conditions content goes here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zwisch. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@zwisch.app">info@zwisch.app</a></p>
+            <div class="footer-links">
+                <a href="https://zwisch.app/privacy_policy.html">Privacy Policy</a> |
+                <a href="https://zwisch.app/terms_and_conditions.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const md = window.markdownit();
+        const markdownContent = `
+# Zwisch Terms and Conditions
+
+## 1. Acceptance of Terms
+
+By accessing or using the Zwisch application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). If you disagree with any part of the Terms, you may not use our App.
+
+## 2. Description of Service
+
+Zwisch is a carpooling platform that connects students, student drivers, and parents for shared rides. We do not provide transportation services directly.
+
+## 3. User Responsibilities
+
+### 3.1 Account Creation
+- Provide accurate, current, and complete information
+- Maintain and update your information
+- Ensure the security of your account credentials
+
+### 3.2 User Conduct
+- Use the App in compliance with all applicable laws
+- Respect other users and their property
+- Do not engage in harmful, fraudulent, or illegal activities
+
+### 3.3 Ride Participants
+- Arrive at the designated pick-up location on time
+- Conduct yourself appropriately during rides
+- Report any issues or concerns promptly
+
+### 3.4 Drivers
+- Maintain a valid driver's license and appropriate insurance
+- Ensure your vehicle is in safe, operational condition
+- Follow all traffic laws and safety regulations
+- Do not drive under the influence of alcohol, drugs, or any impairing substances
+
+## 4. Safety
+
+While Zwisch strives to create a safe environment, we cannot guarantee the conduct of our users. All users are responsible for their own safety and should exercise caution and good judgment when using the App and participating in rides.
+
+## 5. Liability
+
+### 5.1 Disclaimer of Liability
+Zwisch is not liable for:
+- The conduct, actions, or inactions of users
+- Any loss, injury, claim, or damage arising from using the App or participating in rides
+- Any indirect, incidental, special, exemplary, punitive, or consequential damages
+
+### 5.2 Indemnification
+You agree to indemnify and hold Zwisch harmless from any claims, losses, liabilities, and expenses (including attorneys' fees) arising from your use of the App or violation of these Terms.
+
+## 6. Intellectual Property
+
+The App and its original content, features, and functionality are owned by Zwisch and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.
+
+## 7. Termination
+
+We may terminate or suspend your account and access to the App immediately, without prior notice or liability, for any reason.
+
+## 8. Changes to Terms
+
+We reserve the right to modify or replace these Terms at any time. Your continued use of the App after any changes constitute acceptance of those changes.
+
+## 9. Contact Us
+
+If you have any questions about these Terms, please contact us at [info@zwisch.com](mailto:info@zwisch.com).
+
+By accepting these Terms, you also agree to our [Privacy Policy](#).
+        `;
+        
+        document.getElementById('content').innerHTML = md.render(markdownContent);
+    </script>
+</body>
+</html>
