@@ -44,6 +44,14 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/terms-and-conditions', (req, res) => {
+  res.sendFile(__dirname + '/terms_and_conditions.html');
+});
+
+app.get('/privacy-policy', (req, res) => {
+  res.sendFile(__dirname + '/privacy_policy.html');
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
