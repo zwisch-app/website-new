@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Offers - Zwisch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Readex+Pro&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #58f5bb;
+            --accent-color: #d6ffee;
+            --background-color: #000;
+            --text-color: #fff;
+        }
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .brand-name {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        main {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://zwisch.app"><img src="full-logo.png" alt="Zwisch Logo"></a>
+            </div>
+            <div class="brand-name">
+                Zwisch
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div id="content">
+            <!-- Your terms and conditions content goes here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zwisch. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@zwisch.app">info@zwisch.app</a></p>
+            <div class="footer-links">
+                <a href="https://zwisch.app/privacy_policy.html">Privacy Policy</a> |
+                <a href="https://zwisch.app/terms_and_conditions.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const md = window.markdownit();
+        const markdownContent = `
+# Example Ride Requests
+
+### Recurring Ride Request
+- Need a recurring ride from 1 Brookhaven Dr to Marist School at 7:30 AM every weekday, and return at 4:00 PM.
+
+### Sports Practice Ride
+- Looking for a ride to Ninth Inning baseball practice on Mondays and Wednesdays at 5:30 PM, pickup from Marist School.
+
+### Immediate Ride Request
+- Need a ride to Perimeter Mall right now, picking up from Ivy Street at Marist.
+
+### Football Game Transportation
+- Requesting transportation to the away football game at Woodward Academy this Friday, leaving Marist at 5:30 PM.
+
+### One-Time Morning Ride
+- Need a one-time ride from 225 Chastain Park Ave to Marist School tomorrow morning, arriving by 8:00 AM.
+
+### Conference Carpool
+- Looking for a carpool to and from the Model UN conference at Emory University this Saturday, 8:00 AM to 6:00 PM.
+
+### SAT Prep Class Ride
+- Need a ride to the SAT prep class at Centennial Hall every Tuesday and Thursday at 3:30 PM for the next month.
+
+### Basketball Game Transportation
+- Seeking transportation to the Marist vs. St. Pius X basketball game at St. Pius X on Tuesday, leaving Marist at 6:00 PM.
+
+### Regular Morning Ride
+- Require a ride from Sandy Springs MARTA station to Marist every Monday, Wednesday, and Friday, arriving by 7:45 AM.
+
+### Drama Club Rehearsal Ride
+- Need a lift to the drama club rehearsal at Woodruff Arts Center this Sunday, leaving Marist parking lot at 1:00 PM.
+        `;
+        
+        document.getElementById('content').innerHTML = md.render(markdownContent);
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Offers - Zwisch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Readex+Pro&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #58f5bb;
+            --accent-color: #d6ffee;
+            --background-color: #000;
+            --text-color: #fff;
+        }
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .brand-name {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        main {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://zwisch.app"><img src="full-logo.png" alt="Zwisch Logo"></a>
+            </div>
+            <div class="brand-name">
+                Zwisch
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div id="content">
+            <!-- Your terms and conditions content goes here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zwisch. All rights reserved.</p>
+            <p>Contact: <a href="mailto:info@zwisch.app">info@zwisch.app</a></p>
+            <div class="footer-links">
+                <a href="https://zwisch.app/privacy_policy.html">Privacy Policy</a> |
+                <a href="https://zwisch.app/terms_and_conditions.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const md = window.markdownit();
+        const markdownContent = `
+# Example Ride Offers and Routes
+
+### Morning Ride from Dunwoody
+- Available to drive from Dunwoody area to Marist every weekday morning, leaving at 7:15 AM. Can take up to 3 passengers in my SUV.
+
+### After School Ride to Buckhead
+- Can offer rides from Marist to Buckhead area on Tuesdays and Thursdays after school, departing at 3:30 PM. Have 2 open seats.
+
+### SAT Prep Session Ride
+- Willing to drive students to Saturday morning SAT prep sessions at Marist. Can pick up from Sandy Springs area, leaving at 8:30 AM.
+
+### Science Olympiad Transportation
+- Parent volunteer available to transport students to and from the Science Olympiad competition this Friday. Leaving Marist at 2:00 PM, returning around 9:00 PM.
+
+### Staff Morning Ride from North Druid Hills
+- Staff member offering rides from North Druid Hills area to Marist, Monday through Friday. Departure at 6:45 AM, 2 seats available for other staff members.
+
+### Swim and Dive Team Practice Ride
+- Can drive students to Marist Swim and Dive team practices at Dynamo Swim Club on Mondays, Wednesdays, and Fridays. Leaving Marist at 4:15 PM.
+
+### Early Morning Band Practice Carpool
+- Available to carpool students from Brookhaven to Marist for early morning band practice, arriving at school by 6:30 AM on practice days.
+
+### After School Ride to Perimeter
+- Offering rides from Marist to Perimeter area after school on Mondays and Wednesdays. Leaving at 4:00 PM, space for 3 passengers in my minivan.
+
+### JV Soccer Team Away Games Ride
+- Can transport students to away games for JV soccer team. Available most weekday afternoons, leaving from Marist around 3:30 PM.
+
+### Model UN Meeting Transportation
+- Parent willing to drive students to and from Model UN meetings at Oglethorpe University every other Thursday. Departing Marist at 3:45 PM, returning by 7:00 PM.
+        `;
+        
+        document.getElementById('content').innerHTML = md.render(markdownContent);
+    </script>
+</body>
+</html>
