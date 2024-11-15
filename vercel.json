@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/optinexus",
+      "destination": "https://voltient.com",
+      "permanent": true
+    }
+  ]
+}
