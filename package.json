@@ -2,9 +2,9 @@
   "name": "landingwebsite",
   "version": "1.0.0",
   "description": "Zwisch Landing Page",
-  "main": "server.mjs",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "dependencies": {
