@@ -52,6 +52,11 @@ app.get('/privacy-policy', (req, res) => {
   res.sendFile(__dirname + '/privacy_policy.html');
 });
 
+// Redirect route for optinexus
+app.get('/optinexus', (req, res) => {
+  res.redirect('https://voltient.com');
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
