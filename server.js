@@ -54,6 +54,7 @@ app.get('/privacy-policy', (req, res) => {
 
 // Redirect route for optinexus
 app.get('/optinexus', (req, res) => {
+  console.log('Redirecting to optinexus');
   res.redirect('https://voltient.com');
 });
 
